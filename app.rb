@@ -6,10 +6,8 @@ class App < Sinatra::Base
     "#{@user_name}"
   end
   get '/square/:number' do 
-     @sq_num = params[:num]
+     @sq_num = params[:num].to_i**2
      "#{@sq_num}"
-     binding.pry
-     
   end 
   get '/say/:number/:phrase' do
   end
