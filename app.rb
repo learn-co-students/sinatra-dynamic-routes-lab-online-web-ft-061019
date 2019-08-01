@@ -22,22 +22,22 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
     number1 = params[:number1].to_i 
     number2 = params[:number2].to_i
-    if params[:operation] = 'add'
-      answer = (number1 + number2).to_s
-    elsif params[:operation] = 'subtract'
-      answer2 = (number2 - number1).to_s
-    elsif params[:operation] = 'multiply'
-      answer3 = (number1 * number2).to_s
-    elsif params[:operation] = 'divide'
-      answer4 = (number1 / number2).to_s
-    else 
-      nil
-    end
-    answer
-    answer2
-    answer3
-    answer4
-    end 
+    # if params[:operation] = 'add'
+    #   answer = (number1 + number2).to_s
+    # elsif params[:operation] = 'subtract'
+    #   answer2 = (number2 - number1).to_s
+    # elsif params[:operation] = 'multiply'
+    #   answer3 = (number1 * number2).to_s
+    # elsif params[:operation] = 'divide'
+    #   answer4 = (number1 / number2).to_s
+    # else 
+    #   nil
+    # end
+    # answer
+    # answer2
+    # answer3
+    # answer4
+    # end 
     
     
     
